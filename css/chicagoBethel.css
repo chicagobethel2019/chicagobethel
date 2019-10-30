@@ -1,0 +1,484 @@
+/* CONTENTS
+BASIC
+NAVBAR
+01 HOME- Introduction 교회소개
+01 HOME- Link Main Image Container
+01 HOME- SERVICE TIME
+01 HOME- CONTRACTsection#linkImg div.container div.row
+*/
+
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+
+/* BASIC */
+html {
+	box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+}
+
+body {
+  color: #333333;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif ;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.75em;
+		-webkit-text-size-adjust: none;
+}
+
+input, select, textarea {
+	color: #7c8081;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.75em;
+	}
+
+a {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	color: #356004;
+	text-decoration: none;
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+p {
+	color: #333333;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif ;
+}
+
+
+/* NAVBAR */
+@media (min-width:768px) {
+	.navbar-fixed-top {
+		/*padding:5px 0;*/
+		-webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+	}
+
+	.navbar-fixed-top .navbar-brand {
+		font-size:20px;
+		font-style:italic;
+		 -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+	}
+
+	.navbar-fixed-top.navbar-shrink {
+      /*  padding: 10px 0;*/
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+		margin-bottom:0;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+
+.navbar-default {
+	background-color:#383737;
+	opacity: .9;
+	/*background-color: #f7f7f7;
+	opacity: .6;*/
+}
+
+.navbar-default
+.navbar-nav>.active>a,
+.navbar-default
+.navbar-nav>.active>a:hover,
+.navbar-default
+.navbar-nav>.active>a:focus {
+	background-color:#333;
+ }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color:#333;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color:#333;
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 100%;
+	}
+}
+
+@media (min-width: 768px){
+	.container {
+	    width: 100%;
+	}
+}
+
+img.logo_symbol {
+    width: 200px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+	/*color: #000;*/
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #ccff06;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar-toggle .icon-bar {
+	width: 20px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-toggle {
+	padding: 7px 8px;
+}
+
+@media (min-width: 768px){
+	.navbar-right {
+	    float: right!important;
+	    margin-right: 0;
+	}
+}
+
+ul.topMenu li {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+
+/* 01 HOME- Introduction 교회소개 */
+section#introduction div.intro, section#serviceTime div.intro, section#contact div.intro {
+	padding: 50px 0 50px 0;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px){
+	/*For Desktop */
+	section#introduction div.intro, section#serviceTime div.intro {
+		padding: 50px 0 50px 0;
+	}
+
+	div.detail_text {
+    font-size: 13px;
+	}
+}
+
+div.intro div.greenBar img {
+	width: 80px;
+}
+
+.greenBar {
+    margin: 0 0 20px 0;
+}
+
+@media (min-width: 768px){
+	/*For Desktop */
+	.greenBar {
+	    margin: 20px;
+	}
+}
+
+h2.title {
+	color:#356004;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 20px;
+}
+
+h2.title_kr {
+	color:#729012;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 20px;
+}
+
+div.detail_text {
+	color: #333;
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.7;
+  margin: 40px 0 10px 0;
+}
+
+div.learnMore a {
+	color: #356004;
+	text-decoration: underline;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+div.learnMore a:hover {
+	color:#F59623; /*#729012*/
+}
+
+
+/* 01 HOME- Link Main Image Container */
+section#linkImg div.container {
+	background-color: #fff;
+	height: auto;
+}
+
+section#linkImg div.imgBox {
+	text-align: center;
+}
+
+section#linkImg div.imgBox div.title {
+	font-family: 'Noto Sans KR', sans-serif;
+	margin-top: 8px;
+	padding-bottom: 25px;
+}
+
+section#linkImg div.imgBox div.title a {
+	text-decoration: underline;
+}
+
+section#linkImg div.imgBox div.title a:hover {
+	color: #F59623; /*orange*/
+}
+
+section#linkImg div.container div.row {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 10px 50px;
+}
+
+section#linkImg div.imgBox img {
+    width: 80%;
+}
+
+
+/* 01 HOME-  SERVICE TIME */
+section#serviceTime div.intro h2.title {
+	color: #356004;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 5px;
+}
+
+section#serviceTime div.intro p.subT {
+    font-style: italic;
+    color: #6D900F;
+    font-size: 14px;
+		font-family: 'Lato', 'Noto Sans KR', sans-serif;
+}
+
+section#serviceTime {
+	background-color: #f1f2f3;
+}
+
+div.timeTable.row  {
+	width: 100%;
+	margin: 50px auto 15px;
+}
+
+div.timeTable.row div.col-sm-4 {
+    margin: 0 0 30px 0;
+}
+
+div.timeTable div > p.title_kr {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 20px 0;
+}
+
+div.timeTable div > p.title_en {
+	color:#333;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif ;
+	font-size: 12px;
+	font-style: italic;
+	padding-bottom: 3px;
+}
+
+div.timeTable div > div.time {
+    color: #729012;
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 5px !important;
+		font-family: 'Lato', 'Noto Sans KR', sans-serif ;
+}
+
+div.timeTable div > div.line {
+ width: 120px;
+ border-bottom: 1px solid #ccc;
+ margin: 3px auto;
+}
+
+@media (min-width: 768px){
+	/*For Desktop */
+	div.timeTable.row {
+    width: 65%;
+		margin: 60px auto 15px;
+	}
+
+	div.timeTable.row div.col-sm-4 {
+	    margin: 0 0 20px 0;
+	}
+}
+
+/* 01 HOME-  CONTACT */
+section#contact {
+    background-color: #6f6f6f;
+}
+
+section#contact div.intro h2.title {
+  color: #fff;
+  font-family: 'Lato', 'Noto Sans KR', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+section#contact div.info table {
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+section#contact div.info table th, section#contact div.info table td {
+	padding: 7px;
+	color: #fff;
+	font-family: 'Lato', 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+}
+
+section#contact div.info table th {
+  text-align: right;
+  width: 44%;
+  border-right: 4px solid #749800;
+	font-weight: 300;
+}
+
+section#contact div.info table td {
+	text-align: left;
+	font-weight: 300;
+}
+
+section#contact div.about {
+	color: #fff;
+	font-family: 'Noto Sans KR', 'Lato', sans-serif;
+	margin: 30px;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 300;
+}
